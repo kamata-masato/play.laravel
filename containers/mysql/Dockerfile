@@ -1,4 +1,4 @@
-FROM mysql:8.0-oracle
+FROM mysql:8.0.45-oracle
 
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8

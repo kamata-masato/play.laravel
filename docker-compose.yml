@@ -100,7 +100,7 @@ services:
 
   db.schema.web:
     container_name: db-schema-web-container
-    image: nginx:alpine
+    image: nginx:1.28.3-alpine3.23
     ports:
       - '${FORWARD_DB_SCHEMA_WEB_PORT:-4000}:80'
     volumes:
@@ -112,7 +112,7 @@ services:
 
   mail:
     container_name: mail-container
-    image: 'axllent/mailpit:latest'
+    image: 'axllent/mailpit:v1.29.5'
     ports:
       - '${FORWARD_MAIL_PORT:-1025}:1025'
       - '${FORWARD_MAIL_DASHBOARD_PORT:-8025}:8025'
